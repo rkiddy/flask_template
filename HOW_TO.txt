@@ -3,11 +3,15 @@
 
 % virtualenv .venv
 % source .venv/bin/activate
+
+Recently, I have to do '% source .venv/local/bin/activate'. Why the change?
+
 % pip install -r requirements.txt
 
-2) change references to 'app' in app.py to desired application name.
+2) change references to 'app' in app.py to desired application name. Make sure to rename all
+references to 'app'. Rename the app.py file and any html files.
 
-3) create .env file containing:
+3) edit the env file and rename it to .env:
 
 FLASK_APP=app
 FLASK_ENV=development
@@ -39,17 +43,11 @@ links will look like:
 
 This will not work.
 
-4) Remember that when you want to run a flask app on a remote server and correct directyly, one
+4) Remember that when you want to run a flask app on a remote server and correct directly, one
 needs to launch the app thusly:
 
     % (.venv) % python3 -m flask run --host=0.0.0.0
 
 This allows any host on the internet to contact the app. Do not, of course, leave this running
 past a quick test.
-
-
-D
-4) Remeber that when you run a FLASK APP A
-
-
 
