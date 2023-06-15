@@ -46,8 +46,12 @@ This will not work.
 4) Remember that when you want to run a flask app on a remote server and correct directly, one
 needs to launch the app thusly:
 
-    % (.venv) % python3 -m flask run --host=0.0.0.0
+    % (.venv) python3 -m flask run
 
-This allows any host on the internet to contact the app. Do not, of course, leave this running
-past a quick test.
+There is a way to allow anyone on the Internet to access the app quickly. 
+You can do this if you want to, for example, test the app on a server but outside of apache,
+or if you are collaborating with others and want to show a 'not-for-production' version of
+the app for a brief time.
+
+    % (.venv) python3 -m flask run --host=0.0.0.0
 
