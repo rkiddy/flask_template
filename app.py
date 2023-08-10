@@ -12,7 +12,7 @@ import data
 
 app = Flask(__name__)
 application = app 
-env = Environment(loader=PackageLoader('app', 'pages'))
+env = Environment(loader=PackageLoader('app'))
 
 
 @app.route(f"/{cfg['WWW']}")
