@@ -22,6 +22,7 @@ def app_main():
     context = data.app_main()
     return main.render(**context)
 
+
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8080)
 
