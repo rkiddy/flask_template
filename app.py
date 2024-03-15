@@ -15,7 +15,6 @@ application = app
 env = Environment(loader=PackageLoader('app'))
 
 
-@app.route(f"/{cfg['WWW']}")
 @app.route(f"/{cfg['WWW']}/")
 def app_main():
     main = env.get_template('app_main.html')

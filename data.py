@@ -1,4 +1,6 @@
 
+import config
+
 def app_main():
     context = dict()
     # do magic stuff here
